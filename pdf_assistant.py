@@ -9,7 +9,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-os.environ["GROQ_API_KEY"]=os.getenv("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")
+os.environ["GROQ_API_KEY"]=os.getenv(" ")
 db_url = "postgresql+psycopg://ai:ai@localhost:5532/ai"
 
 knowledge_base=PDFUrlKnowledgeBase(
@@ -51,3 +51,4 @@ def pdf_assistant(new: bool = False, user: str = "user"):
 
 if __name__=="__main__":
     typer.run(pdf_assistant)
+
